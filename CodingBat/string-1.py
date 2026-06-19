@@ -15,4 +15,10 @@ def make_out_word(out, word):
   n = len(out)
   return out[0:n/2] + word + out[n/2:]
 
+#Problem_5: extra_end
+def extra_end(str):
+  n = len(str)
+  end = str[n-2:]
+  return 3*end
+
 
