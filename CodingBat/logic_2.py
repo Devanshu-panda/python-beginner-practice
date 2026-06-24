@@ -50,4 +50,42 @@ def fix_teen(n):
     n = 0
   return n
 
-#Problem_5: 
+#Problem_5: round_sum
+def round_sum(a, b, c):
+  return round10(a) + round10(b) +round10(c)   
+
+def round10(num):
+  rem = num % 10
+  if rem >= 5:
+    return num + (10-rem)
+  else:
+    return num - rem
+    
+#Problem_6: close_far
+
+
+
+#Problem_7: make_chocolate
+def make_chocolate(small, big, goal):
+  rem = goal % 5
+  q = goal // 5
+  if rem == 0:
+    if goal/5 <= big:
+      return 0
+    elif goal/5 > big:
+      if goal - 5*big <= small:
+        return goal - 5*big
+      elif goal - 5*big > small:
+          return -1
+  elif rem != 0:
+    if q > big:
+      if goal - 5*big <= small:
+        return goal - 5*big
+      elif goal - 5*big > small:
+        return -1
+    elif q <= big:
+      if goal - 5*q <= small:
+        return goal - 5*q
+      elif goal - 5*q > small:
+        return -1
+
