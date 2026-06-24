@@ -62,8 +62,20 @@ def round10(num):
     return num - rem
     
 #Problem_6: close_far
-
-
+def close_far(a, b, c):
+  diff_1 = abs(a-b)
+  diff_2 = abs(b-c)
+  diff_3 = abs(a-c)
+  if diff_1 <= 1:
+    if diff_3 >= 2 and diff_2 >= 2:
+      return True
+    else:
+        return False
+  if diff_3 <=1:
+    if diff_2 >= 2 and diff_1 >= 2:
+      return True
+    else:
+      return False
 
 #Problem_7: make_chocolate
 def make_chocolate(small, big, goal):
@@ -86,6 +98,7 @@ def make_chocolate(small, big, goal):
     elif q <= big:
       if goal - 5*q <= small:
         return goal - 5*q
+        
       elif goal - 5*q > small:
         return -1
 
