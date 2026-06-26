@@ -40,4 +40,15 @@ def end_other(a, b):
   b_lower = b.lower()
   return(a_lower == b_lower[-len(a):] or b_lower == a_lower[-len(b):])
 
-#Problem_6: 
+#Problem_6:
+def xyz_there(str):
+  n = len(str)
+  count_1 = 0
+  count_2 = 0
+  for i in range(n-2):
+    if "xyz" == str[i:i+3]:
+      count_1 += 1
+  for i in range(n-3):
+    if ".xyz" == str[i:i+4]:
+      count_2 += 1
+  return count_1 > count_2
