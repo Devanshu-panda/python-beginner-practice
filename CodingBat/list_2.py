@@ -32,6 +32,21 @@ def centered_average(nums):
     total += i
   return  (total - smallest - largest)/(n-2)
 
+#Problem_4: sum13
+def sum13(nums):
+    n = len(nums)
+    sum = 0
+    for i in range(n):
+        if i <= 0 and nums[0] != 13:
+            sum += nums[0]
+        if i > 0:
+            if nums[i - 1] != 13 and nums[i] != 13:
+                sum += nums[i]            
+    return sum
+
+#Problem_5: sum67
+
+
 #Problem_6: has22
 def has22(nums):
   sub_array = []
