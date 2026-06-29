@@ -45,7 +45,17 @@ def sum13(nums):
     return sum
 
 #Problem_5: sum67
-
+def sum67(nums):
+    ignore = False
+    sum = 0
+    for i in nums:
+        if i == 6:
+            ignore = True
+        if ignore == False:
+            sum += i
+        if i == 7:
+            ignore = False
+    return sum
 
 #Problem_6: has22
 def has22(nums):
