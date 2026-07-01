@@ -71,7 +71,7 @@ def print_report(report):
 
     print()
 
-    print("Below Average:")
+    print("Below Average Students:")
     if report["below_average"]:
         print(", ".join(report["below_average"]))
     else:
