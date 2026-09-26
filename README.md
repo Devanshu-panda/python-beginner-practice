@@ -9,6 +9,7 @@ I have completed the **CodingBat Python** practice sections and uploaded my solu
 ✅ Completed CodingBat Python
 ✅ Created beginner Python mini-project: Student Marks Analyser
 ✅ Created beginner Python mini-project: Personal Expense Tracker
+✅ Created beginner Python mini-project: Tic-Tac-Toe
 
 ## Folder Structure
 
@@ -26,7 +27,8 @@ python-beginner-practice/
 │
 ├── python_mini_projects/
 │   ├── student_marks_analyser.py
-│   └── personal_expense_tracker.py
+│   ├── personal_expense_tracker.py
+│   └── tic_tac_toe.py
 │
 ├── .gitignore
 ├── LICENSE
@@ -45,6 +47,7 @@ python-beginner-practice/
 * Lists and dictionaries
 * Input validation
 * Menu-based program flow
+* Game logic
 
 ## Mini Projects
 
@@ -95,6 +98,34 @@ A menu-based Python program to add, view, delete, and summarize personal expense
 * Menu-based program flow
 * Basic data handling
 
+---
+
+### Tic-Tac-Toe
+
+A command-line two-player Tic-Tac-Toe game built using Python.
+
+#### Features
+
+* Two-player gameplay (Player X vs Player O)
+* 3×3 game board
+* Alternating turns
+* Input validation
+* Prevents selecting occupied positions
+* Detects invalid positions
+* Detects winning combinations
+* Detects draws
+* Displays the winner when the game ends
+
+#### Concepts Used
+
+* Lists
+* Functions
+* Loops
+* Conditional statements
+* Input validation
+* Game logic
+* Basic problem solving
+
 ## What I Learned
 
 Through CodingBat practice and beginner mini-projects, I improved my ability to:
@@ -106,11 +137,14 @@ Through CodingBat practice and beginner mini-projects, I improved my ability to:
 * Use dictionaries for storing structured data
 * Validate user input
 * Build simple menu-based programs
+* Implement basic game logic
 * Think logically before writing code
 
 ## Note
 
 The CodingBat solutions are kept as part of my beginner learning journey. Some solutions may not be the most optimized or Pythonic, but they represent my original practice work while learning Python fundamentals.
+
+The mini-projects are also part of my learning process and will be improved as I learn more Python concepts.
 
 ## Next Steps
 
@@ -122,6 +156,7 @@ Now that I have completed CodingBat Python and started building beginner mini-pr
 * Improve code structure using functions
 * Learn basic file handling
 * Continue improving problem-solving skills
+* Gradually build more advanced Python projects
 
 ## License
 
