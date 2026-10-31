@@ -33,6 +33,7 @@ python-beginner-practice/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+└── rewuirements.txt
 ```
 
 ## Topics Practiced
@@ -102,29 +103,56 @@ A menu-based Python program to add, view, delete, and summarize personal expense
 
 ### Tic-Tac-Toe
 
-A command-line two-player Tic-Tac-Toe game built using Python.
+A command-line Tic-Tac-Toe game built using Python, featuring both
+two-player gameplay and computer opponents with different difficulty levels.
 
 #### Features
 
-* Two-player gameplay (Player X vs Player O)
-* 3×3 game board
-* Alternating turns
-* Input validation
-* Prevents selecting occupied positions
-* Detects invalid positions
-* Detects winning combinations
-* Detects draws
-* Displays the winner when the game ends
+* Player vs Player mode
+* Player vs Computer (Easy) — computer selects a random available position
+* Player vs Computer (Intelligent) — uses Groq API with the
+  `openai/gpt-oss-20b` model to analyse the board and choose moves
+* Interactive 3×3 game board
+* Custom player names
+* Input validation and prevention of occupied-position selection
+* Automatic winner and draw detection
+* Intelligent mode includes retries for invalid AI moves and a random
+  legal-move fallback
 
-#### Concepts Used
+#### Concepts and Technologies Used
 
-* Lists
-* Functions
-* Loops
+* Python functions and modular programming
+* Lists and loops
 * Conditional statements
 * Input validation
-* Game logic
-* Basic problem solving
+* Random module
+* Groq API
+* Large Language Models (LLMs)
+
+#### How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Devanshu-panda/python-beginner-practice.git
+   cd python-beginner-practice
+
+2. Create a virtual environment:
+    python3 -m venv .venv
+
+3. activate the virtual environment:
+    source .venv/bin/activate
+
+4. Install the required dependencies:
+    pip install -r requirements.txt
+
+5. Set up your Groq API Key:
+    export GROQ_API_KEY="your_groq_api_key"
+
+6. Run the game:
+    python python_mini_projects/tic_tac_toe.py
+
+Note: The Groq API key is required for the Intelligent Computer mode. The current implementation initializes the Groq client at startup, so configure the key even if you intend to play another mode.
 
 ## What I Learned
 
