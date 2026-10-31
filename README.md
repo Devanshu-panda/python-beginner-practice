@@ -32,9 +32,8 @@ python-beginner-practice/
 │
 ├── .gitignore
 ├── LICENSE
-└── README.md
-└── rewuirements.txt
-```
+├── README.md
+└── requirements.txt
 
 ## Topics Practiced
 
@@ -131,28 +130,54 @@ two-player gameplay and computer opponents with different difficulty levels.
 
 #### How to Run
 
-1. Clone the repository:
+Follow these steps to run the Tic-Tac-Toe game on macOS or Linux.
 
-   ```bash
-   git clone https://github.com/Devanshu-panda/python-beginner-practice.git
-   cd python-beginner-practice
+**1. Clone the repository**
 
-2. Create a virtual environment:
-    python3 -m venv .venv
+```bash
+git clone https://github.com/Devanshu-panda/python-beginner-practice.git
+cd python-beginner-practice
+```
 
-3. activate the virtual environment:
-    source .venv/bin/activate
+**2. Create a virtual environment**
 
-4. Install the required dependencies:
-    pip install -r requirements.txt
+```bash
+python3 -m venv .venv
+```
 
-5. Set up your Groq API Key:
-    export GROQ_API_KEY="your_groq_api_key"
+**3. Activate the virtual environment**
 
-6. Run the game:
-    python python_mini_projects/tic_tac_toe.py
+```bash
+source .venv/bin/activate
+```
 
-Note: The Groq API key is required for the Intelligent Computer mode. The current implementation initializes the Groq client at startup, so configure the key even if you intend to play another mode.
+**4. Install the required dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**5. Set your Groq API key**
+
+```bash
+export GROQ_API_KEY="your_groq_api_key"
+```
+
+Replace `your_groq_api_key` with your actual API key.
+
+**6. Run the game**
+
+```bash
+python python_mini_projects/tic_tac_toe.py
+```
+
+**7. Deactivate the virtual environment when finished**
+
+```bash
+deactivate
+```
+
+**Note:** The Groq API key is currently required at startup, even if you select Player vs Player or Easy mode.
 
 ## What I Learned
 
@@ -178,7 +203,6 @@ The mini-projects are also part of my learning process and will be improved as I
 
 Now that I have completed CodingBat Python and started building beginner mini-projects, my next goals are:
 
-* Learn Git and GitHub properly
 * Practice more beginner-to-intermediate Python problems
 * Build more small Python projects
 * Improve code structure using functions
