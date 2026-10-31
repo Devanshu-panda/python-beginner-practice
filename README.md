@@ -6,10 +6,10 @@ I have completed the **CodingBat Python** practice sections and uploaded my solu
 
 ## Current Progress
 
-✅ Completed CodingBat Python
-✅ Created beginner Python mini-project: Student Marks Analyser
-✅ Created beginner Python mini-project: Personal Expense Tracker
-✅ Created beginner Python mini-project: Tic-Tac-Toe
+* Completed CodingBat Python
+* Created beginner Python mini-project: Student Marks Analyser
+* Created beginner Python mini-project: Personal Expense Tracker
+* Created beginner Python mini-project: Tic-Tac-Toe
 
 ## Folder Structure
 
