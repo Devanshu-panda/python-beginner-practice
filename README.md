@@ -34,6 +34,7 @@ python-beginner-practice/
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
 
 ## Topics Practiced
 
