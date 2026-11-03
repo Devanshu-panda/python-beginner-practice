@@ -9,6 +9,7 @@ I have completed the **CodingBat Python** practice sections and uploaded my solu
 * Completed CodingBat Python
 * Created beginner Python mini-project: Student Marks Analyser
 * Created beginner Python mini-project: Personal Expense Tracker
+* Created beginner Python mini-project: Password Validator
 * Created beginner Python mini-project: Tic-Tac-Toe
 
 ## Folder Structure
@@ -28,6 +29,7 @@ python-beginner-practice/
 ├── python_mini_projects/
 │   ├── student_marks_analyser.py
 │   ├── personal_expense_tracker.py
+│   ├── pass_validator.py
 │   └── tic_tac_toe.py
 │
 ├── .gitignore
@@ -47,6 +49,8 @@ python-beginner-practice/
 * Basic problem solving
 * Lists and dictionaries
 * Input validation
+* Password validation
+* Iteration and the `any()` function
 * Menu-based program flow
 * Game logic
 
@@ -101,23 +105,51 @@ A menu-based Python program to add, view, delete, and summarize personal expense
 
 ---
 
+### Password Validator
+
+A command-line Python program that checks whether a password meets a set of security requirements and assigns it a strength score.
+
+#### Features
+
+* Checks for a minimum length of 8 characters
+* Requires uppercase and lowercase letters, digits, and special characters
+* Rejects whitespace
+* Detects common sequences such as `qwerty`, `1234`, and `abcd`
+* Rejects passwords from a predefined common-password set
+* Displays all validation rules that the password fails
+* Calculates a strength score out of 7 and classifies it as Weak, Moderate, or Strong
+* Counts the number of attempts until a valid password is entered
+
+#### Concepts Used
+
+* Strings and string methods
+* Sets
+* Conditional statements
+* Loops
+* Generator expressions
+* The `any()` function
+* Boolean logic
+* Functions and return values
+* Input validation
+
+**Note:** Password validity and the strength score are evaluated separately. The password must satisfy every validation rule to be accepted; the score provides an additional strength classification.
+
+---
+
 ### Tic-Tac-Toe
 
-A command-line Tic-Tac-Toe game built using Python, featuring both
-two-player gameplay and computer opponents with different difficulty levels.
+A command-line Tic-Tac-Toe game built using Python, featuring both two-player gameplay and computer opponents with different difficulty levels.
 
 #### Features
 
 * Player vs Player mode
 * Player vs Computer (Easy) — computer selects a random available position
-* Player vs Computer (Intelligent) — uses Groq API with the
-  `openai/gpt-oss-20b` model to analyse the board and choose moves
+* Player vs Computer (Intelligent) — uses Groq API with the `openai/gpt-oss-20b` model to analyse the board and choose moves
 * Interactive 3×3 game board
 * Custom player names
 * Input validation and prevention of occupied-position selection
 * Automatic winner and draw detection
-* Intelligent mode includes retries for invalid AI moves and a random
-  legal-move fallback
+* Intelligent mode includes retries for invalid AI moves and a random legal-move fallback
 
 #### Concepts and Technologies Used
 
